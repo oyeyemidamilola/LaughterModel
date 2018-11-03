@@ -38,7 +38,12 @@ class laughterDb:
             raise Exception('No database for {}'.format(subject_label))
 
     def _update_laughter_files(self,subject_label):
-                ""
+                "update the data base"
+        
 
     def __repr__(self):
         return 'Database of {}'.format(os.path.basename(self._base_path))
+
+
+if __name__ == '__main__':
+    db = laughterDb('')
